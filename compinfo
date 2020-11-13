@@ -1,0 +1,13 @@
+export COMP_ADDRESS=0x0AA2bD81e77aecfD9B3FA17035FeCaF0b61CA89A
+export TIMELOCK_ADDRESS=0x77c4a94e326fA8fe0472E22eFB51696BF14D9520
+export COMPGOV_ADDRESSS=0x3D6dA2F3EdD4dEE80E35E0369a42334B6f08D454
+--------------------------------------------------------
+Comp=0x61460874a7196d6a22D1eE4922473664b3E95270
+gov=0x665a5f09716d63D9256934855b0CE2056a5C4Cf8
+{COMP:{name:"Comp",symbol:"COMP",decimals:18,address:"0x0AA2bD81e77aecfD9B3FA17035FeCaF0b61CA89A",contract:"Comp"}
+https://kovan.etherscan.io/tx/0xc2dd132badcc13bdfc80156bd2a9c16dff40f946137d3b37fdc8838f099d7ca3
+没改合约地址所以失败:https://kovan.etherscan.io/tx/0x86a8a2d2852245690cab4e05280c135ada5cbfb89e329aceebbb4c800cb99e0b
+要做这个请求的正确例子,然后改造:
+{"jsonrpc":"2.0","id":1092,"method":"eth_getTransactionCount","params":["0xbc8f16d2aee17b096fc5ed558abc8923425176d5","latest"]}
+最美丽的失败:https://kovan.etherscan.io/tx/0x23447aac1b1e9fc2e066f1bd68ff4f8dd825b61fc2295ed770d26ff2da4d36d7
+Fail with error 'GovernorAlpha::propose: one live proposal per proposer, found an already active proposal'
